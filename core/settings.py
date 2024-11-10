@@ -15,9 +15,12 @@ SECRET_KEY = 'django-insecure-s8_&4eo^ml1v@xt(0gj-c$i%o07@3%n3^yj*kc_ibvki53f6v#
 DEBUG = True
 
 
-ALLOWED_HOSTS=['*']
-CORS_ORIGIN_ALLOW_ALL = True
-
+# ALLOWED_HOSTS=['*']
+ALLOWED_HOSTS = ['zeroshop.onrender.com', 'www.zeroshop.onrender.com']
+# CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOWED_ORIGINS = [
+    "https://zeroshoponline.netlify.app/",
+]
 
 # Application definition
 
