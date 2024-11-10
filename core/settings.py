@@ -12,14 +12,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s8_&4eo^ml1v@xt(0gj-c$i%o07@3%n3^yj*kc_ibvki53f6v#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 # ALLOWED_HOSTS=['*']
 ALLOWED_HOSTS = ['zeroshop.onrender.com', 'www.zeroshop.onrender.com']
 # CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOWED_ORIGINS = [
-    "https://zeroshoponline.netlify.app/",
+    "https://zeroshoponline.netlify.app",
 ]
 
 # Application definition
