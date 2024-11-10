@@ -24,7 +24,7 @@ Zero Shop is a full-stack application with CRUD functionality, allowing admins t
 ## 5. Installation and Setup
 * Clone Repository
  ```
-git clone <backend-repo-url>
+git clone 
 ```
 * Database Setup
 ```
