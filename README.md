@@ -18,6 +18,7 @@ Zero Shop is a full-stack application with CRUD functionality, allowing admins t
 ## 4. Deployment
 - **Render**: Deploys the backend Django API, ensuring a scalable and reliable backend service.
 - **Live Link**: [Backend Live Link](https://zeroshop.onrender.com/)
+- **API Documentation**: [Swagger UI](https://zeroshop.onrender.com/api/doc/)
 
 
 

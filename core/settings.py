@@ -12,15 +12,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s8_&4eo^ml1v@xt(0gj-c$i%o07@3%n3^yj*kc_ibvki53f6v#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
-# ALLOWED_HOSTS=['*']
-ALLOWED_HOSTS = ['zeroshop.onrender.com', 'www.zeroshop.onrender.com']
-# CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOWED_ORIGINS = [
-    "https://zeroshoponline.netlify.app",
-]
+ALLOWED_HOSTS=['*']
+CORS_ORIGIN_ALLOW_ALL = True
+
 
 # Application definition
 
@@ -34,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt.token_blacklist',
+    'drf_spectacular',
     'users',
     'api',
 ]
@@ -132,7 +130,14 @@ REST_FRAMEWORK = {
         'rest_framework.filters.SearchFilter'
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10  
+    'PAGE_SIZE': 10  ,
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema", 
+}
+
+SPECTACULAR_SETTINGS = {
+"TITLE": "Zero Shop",
+"DESCRIPTION": "Zero Shop is a full-stack application with CRUD functionality, allowing admins to add, update, and delete products. Authenticated and unauthenticated users can view products, see product details, search, and navigate through paginated results. The application also supports user registration and login features.",
+"VERSION": "1.0.0",
 }
 
 SIMPLE_JWT = {
